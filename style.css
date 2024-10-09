@@ -1,5 +1,41 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Regular.eot'); /* IE9 */
+    src: url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/TTLakes-Regular.woff') format('woff'), /* Modern browsers */
+         url('fonts/TTLakes-Regular.ttf') format('truetype'); /* Legacy iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Medium.eot'); /* IE9 */
+    src: url('fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/TTLakes-Medium.woff') format('woff'), /* Modern browsers */
+         url('fonts/TTLakes-Medium.ttf') format('truetype'); /* Legacy iOS */
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Bold.eot'); /* IE9 */
+    src: url('fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/TTLakes-Bold.woff') format('woff'), /* Modern browsers */
+         url('fonts/TTLakes-Bold.ttf') format('truetype'); /* Legacy iOS */
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 html {
     box-sizing: border-box;
+    font-family: 'TT Lakes', sans-serif; 
+}
+
+body {
+    font-weight: 500;
 }
 
 *, *:before, *:after {
@@ -12,8 +48,154 @@ ul {
     list-style: none;
 }
 
+h1, 
+p, 
+figure,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
 .container {
-    max-width: 1072px;
+    max-width: 1170px;
     margin: 0 auto;
+}
+
+.header {
+    margin-top: 42px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__heading {
+    font-weight: bold;
+    font-size: 28px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: -24px;
+    padding-left: 21px
+}
+
+.header__heading--active {
+    margin-left: -25px;
+    padding-left: 22px;
+    border-left: 3px solid #41F6D7;
+}
+
+.action-menu {
+    width: 373px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-menu__button,
+.service-description__button {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    
+}
+
+.action-menu__button--request::after,
+.action-menu__button--status::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url(img/repair.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+    
+}
+
+.action-menu__button--status::after {
+    background-image: url(img/checkstatus.png);
+}
+
+.header__menu {
+    margin-top: 8px;
+}
+
+.header__list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.links-menu__link {
+    height: 40px;
+    padding: 0 22px;
+    font-size: 16px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    color: #7E7E82;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.links-menu__link--active {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.wrapper__img {
+    width: 531.35px;
+}
+
+figcaption {
+    visibility: hidden;
+}
+
+.service-description {
+    margin-right: 36px;
+}
+
+.service-description__text {
+    color: #1B1C21;
+    font-size: normal;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.service-description__text:last-child {
+    margin-bottom: 0;
+}
+
+.service-description__block {
+    margin-bottom: 14px;
+}
+
+.service-description__button::before {
+    width: 24px;
+    height: 24px;
+    background-image: url(img/expand.png);
+    content: '';
+   
+   
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
 }

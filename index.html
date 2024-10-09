@@ -11,43 +11,58 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <h1 class="header__heading">Услуги и сервисы</h1>
+                <h1 class="header__heading header__heading--active">Услуги и сервисы</h1>
                 <div class="action-menu">
-                    <div class="action-menu__button">Оставить заявку</div>
-                    <div class="action-menu__button">Статус ремонта</div>
+                    <button class="action-menu__button action-menu__button--request">Оставить заявку</button>
+                    <button class="action-menu__button action-menu__button--status">Статус ремонта</button>
                 </div>
             </div>
-            <nav class="header__menu">
+            <nav class="header__menu" aria-label="Главное меню">
                 <ul class="header__list links-menu">
-                    <li class="links-menu__link links-menu__link_active">Ремонтируемые бренды</li>
-                    <li class="links-menu__link">Ремонтируемые устройства</li>
-                    <li class="links-menu__link">Цены на услуги</li>
-                    <li class="links-menu__link">Адреса сервисных центров</li>
-                    <li class="links-menu__link">Специальные цены</li>
-                    <li class="links-menu__link">Отзывы</li>
+                    <li class="links-menu__item">
+                        <a href="#" class="links-menu__link links-menu__link--active" aria-label="Ремонтируемые бренды">Ремонтируемые бренды</a>
+                    </li>
+                    <li class="links-menu__item">
+                        <a href="#" class="links-menu__link" aria-label="Ремонтируемые устройства">Ремонтируемые устройства</a>
+                    </li>
+                    <li class="links-menu__item">
+                        <a href="#" class="links-menu__link" aria-label="Цены на услуги">Цены на услуги</a>
+                    </li>
+                    <li class="links-menu__item">
+                        <a href="#" class="links-menu__link" aria-label="Адреса сервисных центров">Адреса сервисных центров</a>
+                    </li>
+                    <li class="links-menu__item">
+                        <a href="#" class="links-menu__link" aria-label="Специальные цены">Специальные цены</a>
+                    </li>
+                    <li class="links-menu__item">
+                        <a href="#" class="links-menu__link" aria-label="Отзывы">Отзывы</a>
+                    </li>
                 </ul>
             </nav>
+            
         </div>
     </header>
     <main>
         <div class="container">
-            <article>
-                <section>
-                    <p>
-                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
-                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                    </p>
-                    <p>
-                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. 
-                        Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                    </p>
-                </section>
-                <button>Читать далее</button>
-            </article>
-            <figure>
-                <img src="/img/_MG_3223.jpg" alt="Табличка Сервис-провайдера CPS при входе в кабинет.">
-                <figcaption>Сервис-провайдер CPS</figcaption>
-            </figure>
+            <div class="wrapper">
+                <article class="service-description">
+                    <section class="service-description__block">
+                        <p class="service-description__text">
+                            Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                        </p>
+                        <p class="service-description__text">
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. 
+                            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                        </p>
+                    </section>
+                    <button class="service-description__button">Читать далее</button>
+                </article>
+                <figure>
+                    <img class="wrapper__img" src="/img/_MG_3223.jpg" alt="Табличка Сервис-провайдера CPS при входе в кабинет.">
+                    <figcaption>Сервис-провайдер CPS</figcaption>
+                </figure>
+            </div>
         </div>
     </main>
     

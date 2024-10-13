@@ -146,7 +146,7 @@ button {
     content: '';
     width: 40px;
     height: 40px;
-    background-image: url(/img/repair.png);
+    background-image: url(img/repair.png);
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 8px;
@@ -154,7 +154,7 @@ button {
 }
 
 .action-menu__button--status::after {
-    background-image: url(/img/checkstatus.png);
+    background-image: url(img/checkstatus.png);
 }
 
 .action-menu__service--desktop {
@@ -242,7 +242,7 @@ button {
 .service-description__button::before {
     width: 24px;
     height: 24px;
-    background-image: url(/img/expand.png);
+    background-image: url(img/expand.png);
     content: '';
    
    
@@ -334,19 +334,19 @@ button {
     }
 
     .action-menu__button--call::after {
-        background-image: url(/img/call.png);
+        background-image: url(img/call.png);
     }
 
     .action-menu__button--message::after {
-        background-image: url(/img/chat.png);
+        background-image: url(img/chat.png);
     }
 
     .action-menu__button--profile::after {
-        background-image: url(/img/profile.png);
+        background-image: url(img/profile.png);
     }
 
     .action-menu__button--burgerMenu::after {
-        background-image: url(/img/burger.png);
+        background-image: url(img/burger.png);
         margin-left: 0;
     }
 

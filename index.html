@@ -4,18 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сервис-провайдер по ремонту смартфонов, компьютерной, медицинской и бытовой техники</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        
             <div class="header__inner">
-                <h1 class="header__heading header__heading--active">Услуги и сервисы</h1>
-                <div class="action-menu">
-                    <button class="action-menu__button action-menu__button--request">Оставить заявку</button>
-                    <button class="action-menu__button action-menu__button--status">Статус ремонта</button>
+                <div class="mobile-menu">
+                    <div class="mobile-menu__left-block">
+                        <div class="action-menu">
+                            <button class="action-menu__button action-menu__button--burgerMenu"></button>
+                            <img class="mobile-menu__logo" src="img/Group.png" alt="Логотип CPS">
+                        </div>
+                        
+                    </div>
+
+                    <div class="action-menu">
+                        <div class="action-menu__contacts">
+                            <button class="action-menu__button action-menu__button-contacts action-menu__button--call"></button>
+                            <button class="action-menu__button action-menu__button-contacts action-menu__button--message"></button>
+                            <button class="action-menu__button action-menu__button-contacts action-menu__button--profile"></button>
+                        </div>
+                        <div class="action-menu__service">
+                            <button class="action-menu__button action-menu__button-service action-menu__button--request">Оставить заявку</button>
+                            <button class="action-menu__button action-menu__button-service action-menu__button--status">Статус ремонта</button>
+                        </div>
+                    </div>
                 </div>
+                <h1 class="header__heading header__heading--active">Услуги и сервисы</h1>
+                <div class="action-menu__service action-menu__service--desktop">
+                    <button class="action-menu__button action-menu__button-service action-menu__button--request">Оставить заявку</button>
+                    <button class="action-menu__button action-menu__button-service action-menu__button--status">Статус ремонта</button>
+                </div>
+                
             </div>
             <nav class="header__menu" aria-label="Главное меню">
                 <ul class="header__list links-menu">
@@ -40,7 +62,7 @@
                 </ul>
             </nav>
             
-        </div>
+        
     </header>
     <main>
         <div class="container">
@@ -58,9 +80,9 @@
                     </section>
                     <button class="service-description__button">Читать далее</button>
                 </article>
-                <figure>
-                    <img class="wrapper__img" src="/img/_MG_3223.jpg" alt="Табличка Сервис-провайдера CPS при входе в кабинет.">
-                    <figcaption>Сервис-провайдер CPS</figcaption>
+                <figure class="image-block">
+                    <img class="image-block__img" src="img/_MG_3223.jpg" alt="Табличка Сервис-провайдера CPS при входе в кабинет.">
+                    <figcaption class="image-block__description">Сервис-провайдер CPS</figcaption>
                 </figure>
             </div>
         </div>

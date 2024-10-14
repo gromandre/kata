@@ -42,10 +42,10 @@ body {
 }
 
 html, body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
 box-sizing: inherit;
 }
 
@@ -182,12 +182,14 @@ button {
     color: #7E7E82;
     cursor: pointer;
     text-decoration: none;
-    
+    border: 2px solid transparent;
 }
 
-.links-menu__link--active {
-    border: 2px solid #B8FFEC;
+.links-menu__link:hover {
+    
+    border-color: #B8FFEC;
     border-radius: 6px;
+    background-color: #FFFFFF;
 }
 
 .wrapper {
